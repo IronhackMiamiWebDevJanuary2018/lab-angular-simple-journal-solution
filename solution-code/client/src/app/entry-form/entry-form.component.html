@@ -1,0 +1,13 @@
+<form #entryForm>
+  <div>
+    <label for="title">Title</label>
+    <input id="title" [(ngModel)]="entry.title" name="title" type="text">
+  </div>
+
+  <div>
+    <label for="content">Content</label>
+    <textarea id="content" [(ngModel)]="entry.content" name="content"></textarea>
+  </div>
+
+  <button (click)="submitEntry()">Submit Entry</button>
+</form>
